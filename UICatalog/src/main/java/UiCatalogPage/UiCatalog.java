@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by mrahman on 1/15/17.
+ * Updated by Shams Muhammad.
  */
 public class UiCatalog extends Base {
 

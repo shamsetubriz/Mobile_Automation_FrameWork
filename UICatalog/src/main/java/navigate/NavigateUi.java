@@ -1,6 +1,6 @@
 package navigate;
 
-import generic.Base;
+import common.Base;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by mrahman on 1/15/17.
+ * Updated by Shams.
  */
 public class NavigateUi extends Base {
 

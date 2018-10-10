@@ -1,17 +1,16 @@
 package iPhone;
-
-import navigate.NavigateUi;
 import TextFieldsPage.TextFields;
 import UiCatalogPage.UiCatalog;
+import common.Base;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import static common.Base.ad;
 
 /**
- * Created by mrahman on 1/15/17.
+ * Updated by Shams.
  */
-public class TextFieldsTest extends NavigateUi {
+public class TextFieldsTest extends Base {
 
     TextFields textFields = new TextFields();
 

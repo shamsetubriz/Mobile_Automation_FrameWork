@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 /**
- * Created by Bilal on 25-01-2017.
+ * Updated by Shams.
  */
 public class AlertsTest extends Base {
     public Alerts alerts(){

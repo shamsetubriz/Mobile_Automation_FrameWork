@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by mrahman on 9/5/15.
+ * Updated by Shams on 09/27/18
  */
 public class Base {
 
@@ -46,7 +46,7 @@ public class Base {
 
         if(OS.equalsIgnoreCase("ios")){
             if(appType.contains("iPhone")){
-                appDirectory = new File("IOS/src/app");
+                appDirectory = new File("UICatalog/src/app");
                 findApp = new File(appDirectory,"UICatalog6.1.app.zip");
                 if(deviceType.equalsIgnoreCase("RealDevice")){
                     cap = new DesiredCapabilities();
@@ -98,8 +98,8 @@ public class Base {
 
         }else if(OS.contains("Android")){
             if(appType.contains("Phone")){
-                appDirectory = new File("Android/src/app");
-                findApp = new File(appDirectory,"snapchat.apk");
+                appDirectory = new File("NYP/src/app");
+                findApp = new File(appDirectory,"nyp.apk");
                 if(deviceType.equalsIgnoreCase("RealDevice")){
                     cap = new DesiredCapabilities();
                     cap.setCapability(MobileCapabilityType.DEVICE_NAME,deviceName);
