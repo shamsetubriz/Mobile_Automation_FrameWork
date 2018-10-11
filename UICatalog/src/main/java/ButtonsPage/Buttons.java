@@ -14,13 +14,13 @@ public class Buttons extends Base {
     @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\'Background Image\']")
     public static WebElement backGroudImageText;
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Right pointing arrow\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\'Right pointing arrow\']")
     private WebElement imageBtn;
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Rounded\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\'Rounded\']")
     private WebElement roundedBtn;
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Back\"]")
+    @FindBy(xpath = "//XCUIElementTypeButton[@name=\'Back\']")
     private WebElement backBtn;
 
     @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\'UIButton\'])[2]")
