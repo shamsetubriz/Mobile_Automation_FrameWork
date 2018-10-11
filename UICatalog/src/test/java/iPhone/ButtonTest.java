@@ -15,7 +15,7 @@ public class ButtonTest extends Base {
     Buttons buttons;
 
     @BeforeMethod
-    public void navigate()throws InterruptedException{
+    public void button()throws InterruptedException{
         UiCatalog ui = PageFactory.initElements(ad, UiCatalog.class);
         ui.getButtonPage();
         buttons = PageFactory.initElements(ad, Buttons.class);
