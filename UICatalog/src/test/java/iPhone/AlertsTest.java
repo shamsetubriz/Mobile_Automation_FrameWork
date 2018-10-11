@@ -16,39 +16,23 @@ public class AlertsTest extends Base {
         return PageFactory.initElements(ad,Alerts.class);
     }
     @Test
-    public void testActionSheetSimple() throws InterruptedException {
-        alerts().showActionSheetSimple();
+    public void testTapUiActionSheetShowSimple() throws InterruptedException {
+        alerts().tapUiActionSheetShowSimple();
         sleep(2);
     }
     @Test
-    public void testActionSheetOkCancel() throws InterruptedException {
-        alerts().showActionSheetOkCancel();
+    public void testTapUiActionSheetShowOkCancel() throws InterruptedException {
+        alerts().tapUiActionSheetShowOkCancel();
         sleep(2);
     }
     @Test
-    public void testActionSheetCustom() throws InterruptedException {
-        alerts().showActionSheetCustom();
+    public void testTapUiActionSheetShowCustomized() throws InterruptedException {
+        alerts().tapUiActionSheetShowCustomized();
         sleep(2);
     }
     @Test
-    public void testAlertSimple() throws InterruptedException {
-        alerts().showAlertSimple();
+    public void testTapUiAlerViewShowSimple() throws InterruptedException {
+        alerts().tapUiAlerViewShowSimple();
         sleep(2);
     }
-    @Test
-    public void testAlertOkCancel() throws InterruptedException {
-        alerts().showAlertOkCancel();
-        sleep(2);
-    }
-    @Test
-    public void testAlertCustom() throws InterruptedException {
-        alerts().showAlertCustom();
-        sleep(2);
-    }
-    @Test
-    public void testSecureInput() throws InterruptedException {
-        alerts().showSecureTextInput();
-        sleep(2);
-    }
-
 }

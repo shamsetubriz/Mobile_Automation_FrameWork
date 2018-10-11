@@ -1,31 +1,37 @@
 package AlertsPage;
 
+import WebPage.Web;
 import common.Base;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 /**
  * Updated by Shams Muhammad 09/24/18.
  */
 public class Alerts extends Base{
 
-    public void showActionSheetSimple(){
-        clickByXpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[1]");
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\'Show Simple\'])[1]")
+    public static WebElement uiActionSheetShowSimple;
+
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\'Show OK-Cancel\'])[1]")
+    public static WebElement uiActionSheetShowOkCancel;
+
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\'Show Customized\']")
+    public static WebElement uiActionSheetShowCustomized;
+
+    @FindBy(xpath = "(//XCUIElementTypeStaticText[@name=\'Show Simple\'])[2]")
+    public static WebElement uiAlerViewShowSimple;
+
+    public void tapUiActionSheetShowSimple(){
+        uiActionSheetShowSimple.click();
     }
-    public void showActionSheetOkCancel(){
-        clickByXpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[3]");
+    public void tapUiActionSheetShowOkCancel(){
+        uiActionSheetShowOkCancel.click();
     }
-    public void showActionSheetCustom(){
-        clickByXpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[5]");
+    public void tapUiActionSheetShowCustomized(){
+        uiActionSheetShowCustomized.click();
     }
-    public void showAlertSimple(){
-        clickByXpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[7]");
-    }
-    public void showAlertOkCancel(){
-        clickByXpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[9]");
-    }
-    public void showAlertCustom(){
-        clickByXpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[11]");
-    }
-    public void showSecureTextInput(){
-        clickByXpath("//UIAApplication[1]/UIAWindow[2]/UIATableView[1]/UIATableCell[13]");
+    public void tapUiAlerViewShowSimple(){
+        uiAlerViewShowSimple.click();
     }
 }
